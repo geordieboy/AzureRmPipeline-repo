@@ -21,6 +21,6 @@ steps:
     location: 'West Europe'
     templateLocation: 'URL of the file'
     csmFileLink: 'https://raw.githubusercontent.com/geordieboy/AzureRmPipeline-repo/main/CreateWebApp/azuredeploy.json'
-    overrideParameters: '-projectName COOP'
+    overrideParameters: '-projectName coopdemo'
     deploymentMode: 'Incremental'
     deploymentName: 'DeployPipelineTemplate'
