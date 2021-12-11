@@ -4,7 +4,7 @@
   "parameters": {
     "logicAppName": {
       "type": "string",
-      "defaultValue": "logic_demo2",
+      "defaultValue": "logic_demo3",
       "metadata": {
         "description": "Name of the Logic App."
       }
