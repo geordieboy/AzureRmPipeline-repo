@@ -17,7 +17,7 @@ steps:
       subscriptionId: "a9828cc5-3ef8-407b-8f82-6e07235f6f5c"
       action: "Create Or Update Resource Group"
       resourceGroupName: "LADV"
-      location: "West Europe"
+      location: "North Europe"
       templateLocation: "URL of the file"
       csmFileLink: "https://raw.githubusercontent.com/geordieboy/AzureRmPipeline-repo/main/logicAppTemplate2.json"
       deploymentMode: "Incremental"
