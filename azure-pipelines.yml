@@ -4,23 +4,22 @@
 # https://aka.ms/yaml
 
 trigger:
-- main
+  - main
 
 pool:
   vmImage: ubuntu-latest
 
 steps:
-
-- task: AzureResourceManagerTemplateDeployment@3
-  inputs:
-    deploymentScope: 'Resource Group'
-    azureResourceManagerConnection: 'AzureRmPipeline-conn'
-    subscriptionId: '4d95bddc-a019-4830-a423-795f06e26151'
-    action: 'Create Or Update Resource Group'
-    resourceGroupName: 'coop-devops-poc'
-    location: 'West Europe'
-    templateLocation: 'URL of the file'
-    csmFileLink: 'https://raw.githubusercontent.com/geordieboy/AzureRmPipeline-repo/main/CreateWebApp/azuredeploy.json'
-    overrideParameters: '-projectName coopdemo'
-    deploymentMode: 'Incremental'
-    deploymentName: 'DeployPipelineTemplate'
+  - task: AzureResourceManagerTemplateDeployment@3
+    inputs:
+      deploymentScope: "Resource Group"
+      azureResourceManagerConnection: "AzureRmPipeline-conn"
+      subscriptionId: "a9828cc5-3ef8-407b-8f82-6e07235f6f5c"
+      action: "Create Or Update Resource Group"
+      resourceGroupName: "LADV"
+      location: "West Europe"
+      templateLocation: "URL of the file"
+      csmFileLink: "https://raw.githubusercontent.com/geordieboy/AzureRmPipeline-repo/main/logicAppTemplate2.json"
+      overrideParameters: "-projectName coopdemo"
+      deploymentMode: "Incremental"
+      deploymentName: "DeployPipelineTemplate"
